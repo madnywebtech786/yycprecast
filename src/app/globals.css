@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+@theme {
+  --color-primary: #3763ba;
+  --color-primary-light: #4a78d1;
+  --color-primary-dark: #2a4d91;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-gradient-1 {
+  background: #3763ba;
+  background: linear-gradient(
+    115deg,
+    rgba(55, 99, 186, 1) 0%,
+    rgba(26, 39, 110, 1) 100%
+  );
+}
+.bg-gradient-2 {
+  background: #3763ba;
+  background: linear-gradient(
+    189deg,
+    rgba(55, 99, 186, 1) 0%,
+    rgba(26, 39, 110, 1) 100%
+  );
+}
+.bg-gradient-3 {
+  background: #3763ba;
+  background: linear-gradient(
+    259deg,
+    rgba(55, 99, 186, 1) 0%,
+    rgba(26, 39, 110, 1) 100%
+  );
+}
+
+.glass-effect {
+  background: var(--glass, rgba(255, 255, 255, 0.04));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.1));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.image-hover {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.image-hover:hover {
+  transform: translateY(-10px) !important;
+}
+
+
+.step-card {
+  transition: all 0.4s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gallery-item:hover {
+  transform: scale(1.03) rotate(1deg);
+  z-index: 10;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #3763ba;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.file-upload-area {
+  border: 2px dashed white;
+  transition: all 0.3s ease;
+}
+
+.file-upload-area:hover {
+  border-color: #3763ba;
+  background-color: rgba(55, 99, 186, 0.05);
+}
+
+.aos-animate {
+  transition-delay: calc(var(--aos-delay) * 0.1s) !important;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #1a2a6c, #2a4d91, #3763ba);
+}
+
+.testimonial-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 5rem;
+  color: rgba(55, 99, 186, 0.1);
+  font-family: serif;
+  line-height: 1;
+}
