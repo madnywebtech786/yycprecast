@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export const AboutSection = ({ handleScroll }) => (
+export const AboutSection = () => (
   <div className='container mx-auto p-6 md:p-8 lg:p-12 2xl:p-20 bg-gray-900'>
     <div className='grid lg:grid-cols-2 gap-16 items-center'>
       <motion.div
@@ -62,7 +62,6 @@ export const AboutSection = ({ handleScroll }) => (
           </motion.a>
           <motion.a
             href='#contact'
-            onClick={(e) => handleScroll(e, 'contact')}
             className='border-2 border-primary hover:bg-primary/10 text-white font-bold py-3 px-8 rounded-xl transition-all'
             whileHover={{ scale: 1.05 }}
           >

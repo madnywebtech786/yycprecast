@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
+import { lazy } from "react";
+import Footer from "./sections/Footer";
+const Navigation = lazy(() => import("./sections//Navigation"));
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,9 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-gray-900`}
       >
+        <Navigation />
         {children}
+        <Footer />
         <WhatsAppButton />
       </body>
     </html>

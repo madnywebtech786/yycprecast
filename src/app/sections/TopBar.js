@@ -6,7 +6,7 @@ const TopBar = () => (
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="bg-gray-900/90 backdrop-blur-sm py-2 text-sm border-b border-gray-800"
+    className="bg-gray-900 backdrop-blur-sm py-2 text-sm border-b border-primary !text-white dark:!text-white"
   >
     <div className="container mx-auto p-4 md:px-8 lg:px-12 2xl:px-20 flex flex-wrap justify-between items-center">
       <div className="flex space-x-6">

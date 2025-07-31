@@ -143,3 +143,18 @@ body {
   font-family: serif;
   line-height: 1;
 }
+.zoom-animation {
+  animation: zoom-in-zoom-out 3s ease-in-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1); /* Original size at the start */
+  }
+  50% {
+    transform: scale(1.2); /* Zoomed in at the midpoint */
+  }
+  100% {
+    transform: scale(1); /* Returns to original size at the end */
+  }
+}

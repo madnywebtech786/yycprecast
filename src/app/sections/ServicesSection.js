@@ -36,7 +36,7 @@ const ServicesSection = () => (
       </motion.p>
     </div>
 
-    <div className='grid lg:grid-cols-2 gap-10'>
+    <div className='grid lg:grid-cols-2 gap-20'>
       {/* Service 1 */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

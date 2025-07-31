@@ -1,5 +1,5 @@
-import { Phone, Mail,Facebook,Instagram } from "lucide-react";
-const Footer = ({ handleScroll }) => (
+import { Phone, Mail, Facebook, Instagram } from "lucide-react";
+const Footer = () => (
   <footer className="py-16 bg-gray-950 border-t border-gray-800">
     <div className="container mx-auto p-4 md:p-8 lg:p-12 2xl:p-20">
       <div className="grid md:grid-cols-4 gap-10">
@@ -25,9 +25,7 @@ const Footer = ({ handleScroll }) => (
               className="text-gray-400 hover:text-primary transition-colors"
             >
               <Instagram size={20} />
-              
             </a>
-
           </div>
         </div>
 
@@ -36,8 +34,7 @@ const Footer = ({ handleScroll }) => (
           <ul className="space-y-3">
             <li>
               <a
-                href="#home"
-                onClick={(e) => handleScroll(e, "home")}
+                href="/"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Home
@@ -46,7 +43,6 @@ const Footer = ({ handleScroll }) => (
             <li>
               <a
                 href="#about"
-                onClick={(e) => handleScroll(e, "about")}
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 About Us
@@ -54,17 +50,7 @@ const Footer = ({ handleScroll }) => (
             </li>
             <li>
               <a
-                href="#services"
-                onClick={(e) => handleScroll(e, "services")}
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
                 href="#projects"
-                onClick={(e) => handleScroll(e, "projects")}
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Projects
@@ -73,7 +59,6 @@ const Footer = ({ handleScroll }) => (
             <li>
               <a
                 href="#testimonials"
-                onClick={(e) => handleScroll(e, "testimonials")}
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Testimonials
@@ -87,8 +72,7 @@ const Footer = ({ handleScroll }) => (
           <ul className="space-y-3">
             <li>
               <a
-                href="#precast-steps"
-                onClick={(e) => handleScroll(e, "services")}
+                href="/services/precast-concrete-steps"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Precast Concrete Steps
@@ -96,35 +80,10 @@ const Footer = ({ handleScroll }) => (
             </li>
             <li>
               <a
-                href="#window-well"
-                onClick={(e) => handleScroll(e, "services")}
+                href="/services/window-well-covers"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Window Well Covers
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Custom Solutions
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Architectural Elements
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Infrastructure Components
               </a>
             </li>
           </ul>
