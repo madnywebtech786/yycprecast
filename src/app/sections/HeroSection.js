@@ -63,9 +63,9 @@ const HeroSection = ({ handleScroll }) => {
   return (
     <section
       id="home"
-      className="bg-gradient-1  min-h-screen flex items-center pt-16 relative overflow-hidden"
+      className="hero min-h-screen flex items-center pt-16 relative overflow-hidden"
     >
-      <div className="h-auto lg:h-screen w-full mx-auto p-6 md:px-8 lg:px-12 2xl:px-20 relative z-10 ">
+      <div className="h-auto lg:h-screen w-full mx-auto p-6 md:px-8 lg:px-12 2xl:px-20 relative z-10 mt-40">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-0">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -73,7 +73,7 @@ const HeroSection = ({ handleScroll }) => {
             transition={{ duration: 0.6 }}
             className="w-full lg:w-1/2"
           >
-            <span className="inline-block px-4 py-1 bg-primary-dark/60 text-white rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-primary text-white rounded-full text-sm font-medium mb-4">
               PRECISION ENGINEERING
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-space font-bold mb-6">
@@ -120,10 +120,7 @@ const HeroSection = ({ handleScroll }) => {
             className=" w-full lg:w-1/2"
           >
             <div className="relative">
-              <div className="w-36 h-36 rounded-full z-10 absolute -top-5 left-2 bg-gradient-2 zoom-animation"></div>
-              <div className="w-36 h-36 rounded-full z-10 absolute -bottom-5 right-2 bg-gradient-2 zoom-animation"></div>
-
-              <div className="relative z-20   backdrop-blur-sm lg:w-4/5 mx-auto !h-1/2 rounded-2xl p-4 !border-2 !border-white shadow-2xl">
+              <div className="relative z-20   backdrop-blur-lg lg:w-4/5 mx-auto !h-1/2 rounded-2xl p-4 !border-2 !border-white shadow-2xl">
                 <h2 className="text-2xl font-bold mb-6 text-white">
                   Request a Quote
                 </h2>
@@ -173,12 +170,18 @@ const HeroSection = ({ handleScroll }) => {
                           "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'><path d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/></svg>\")",
                       }}
                     >
-                      <option value="">Select Service</option>
-                      <option value="precast-steps">
+                      <option className="text-primary" value="">
+                        Select Service
+                      </option>
+                      <option className="text-primary" value="precast-steps">
                         Precast Concrete Steps
                       </option>
-                      <option value="window-well">Window Well Covers</option>
-                      <option value="custom">Custom Solutions</option>
+                      <option className="text-primary" value="window-well">
+                        Window Well Covers
+                      </option>
+                      <option className="text-primary" value="custom">
+                        Custom Solutions
+                      </option>
                     </select>
                   </div>
 

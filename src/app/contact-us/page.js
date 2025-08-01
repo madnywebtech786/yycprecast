@@ -33,8 +33,8 @@ export default function page() {
   };
   return (
     <>
-      <Breadcrumb name={"Our Projects"} />
-      <div className="bg-gray-900 p-6 md:p-8 lg:p-12 2xl:p-20">
+      <Breadcrumb name={"Contact Us"} />
+      <div className=" p-6 md:p-8 lg:p-12 2xl:p-20">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -45,7 +45,7 @@ export default function page() {
             <div className="w-36 h-36 rounded-full z-10 absolute -top-5 left-2 bg-gradient-2 zoom-animation"></div>
             <div className="w-36 h-36 rounded-full z-10 absolute -bottom-5 right-2 bg-gradient-2 zoom-animation"></div>
 
-            <div className="relative z-20   backdrop-blur-sm lg:w-4/5 mx-auto !h-1/2 rounded-2xl p-4 !border-2 !border-white shadow-2xl">
+            <div className="relative z-20 bg-gradient-1  backdrop-blur-sm lg:w-4/5 mx-auto !h-1/2 rounded-2xl p-4 shadow-2xl">
               <h2 className="text-2xl font-bold mb-6 text-white">
                 Request a Quote
               </h2>
@@ -95,12 +95,12 @@ export default function page() {
                         "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'><path d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/></svg>\")",
                     }}
                   >
-                    <option value="">Select Service</option>
-                    <option value="precast-steps">
+                    <option className="text-primary" value="">Select Service</option>
+                    <option className="text-primary" value="precast-steps">
                       Precast Concrete Steps
                     </option>
-                    <option value="window-well">Window Well Covers</option>
-                    <option value="custom">Custom Solutions</option>
+                    <option className="text-primary" value="window-well">Window Well Covers</option>
+                    <option className="text-primary" value="custom">Custom Solutions</option>
                   </select>
                 </div>
 

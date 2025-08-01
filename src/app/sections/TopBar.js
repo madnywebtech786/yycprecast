@@ -1,14 +1,8 @@
-import { motion } from "framer-motion";
 import { Phone, Mail, Facebook, Instagram } from "lucide-react";
 
 const TopBar = () => (
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.5 }}
-    className="bg-gray-900 backdrop-blur-sm py-2 text-sm border-b border-primary !text-white dark:!text-white"
-  >
-    <div className="container mx-auto p-4 md:px-8 lg:px-12 2xl:px-20 flex flex-wrap justify-between items-center">
+  <div className="bg-gradient-1 backdrop-blur-sm py-2 text-sm border-b border-primary !text-white dark:!text-white">
+    <div className="w-full p-4 md:px-8 lg:px-12 2xl:px-20 flex flex-wrap justify-between items-center">
       <div className="flex space-x-6">
         <a
           href="mailto:yycprecast2@gmail.com"
@@ -22,7 +16,7 @@ const TopBar = () => (
           className="flex items-center hover:text-primary transition-colors"
         >
           <Phone className="h-4 w-4 mr-1" />
-          4038521114
+          (403) 852-1114
         </a>
       </div>
       <div className="hidden lg:flex space-x-4 mt-2 md:mt-0 ">
@@ -34,7 +28,7 @@ const TopBar = () => (
         </a>
       </div>
     </div>
-  </motion.div>
+  </div>
 );
 
 export default TopBar;

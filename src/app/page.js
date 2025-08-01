@@ -47,7 +47,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="font-inter bg-gray-900 text-gray-100 min-h-screen overflow-hidden">
+      <div className="font-inter bg-white text-gray-100 min-h-screen overflow-hidden">
         {/* Hero Section */}
         <HeroSection
           handleScroll={handleScroll}

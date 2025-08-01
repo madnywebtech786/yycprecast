@@ -23,7 +23,7 @@ export const TestimonialsSection = () => {
   ];
 
   return (
-    <div className="container mx-auto p-6 md:p-8 lg:p-12 2xl:p-20 bg-gradient-1">
+    <div className=" p-6 md:p-8 lg:p-12 2xl:p-20 bg-gradient-1">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="inline-block px-4 py-1 bg-primary text-white rounded-full text-sm font-medium mb-4">CLIENT VOICES</span>
         <h2 className="text-3xl lg:text-4xl font-space font-bold mb-6">

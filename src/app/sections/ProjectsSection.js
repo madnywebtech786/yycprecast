@@ -42,18 +42,18 @@ export const ProjectsSection = ({ handleScroll }) => {
   ];
 
   return (
-    <div className='container mx-auto p-6 md:p-8 lg:p-12 2xl:p-20'>
+    <div className=' p-6 md:p-8 lg:p-12 2xl:p-20 bg-white'>
       <div className='text-center max-w-3xl mx-auto mb-16'>
-        <span className='inline-block px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium mb-4'>
+        <span className='inline-block px-4 py-1 bg-primary text-white rounded-full text-sm font-medium mb-4'>
           PROJECT GALLERY
         </span>
         <h2 className='text-3xl lg:text-4xl font-space font-bold mb-6'>
-          <span className='bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300'>
+          <span className='text-black'>
             Precision in
           </span>
           <span className='text-primary ml-2'>Every Project</span>
         </h2>
-        <p className='text-xl text-gray-300'>
+        <p className='text-xl text-black'>
           Explore our portfolio of innovative precast concrete solutions that
           redefine architectural possibilities.
         </p>

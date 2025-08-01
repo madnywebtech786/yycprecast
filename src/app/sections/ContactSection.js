@@ -33,7 +33,7 @@ const ContactSection = ({ files, setFiles }) => {
   };
 
   return (
-    <div className="container mx-auto p-6 md:p-8 lg:p-12 2xl:p-20 bg-gradient-3">
+    <div className=" p-6 md:p-8 lg:p-12 2xl:p-20 bg-gradient-3">
       <div className="text-center max-w-3xl mx-auto mb-16 backdrop-blur-md">
         <span className="inline-block px-4 py-1 bg-primary text-white rounded-full text-sm font-medium mb-4">
           GET IN TOUCH
@@ -119,10 +119,9 @@ const ContactSection = ({ files, setFiles }) => {
                       "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'><path d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/></svg>\")",
                   }}
                 >
-                  <option value="">Select Service</option>
-                  <option value="precast-steps">Precast Concrete Steps</option>
-                  <option value="window-well">Window Well Covers</option>
-                  <option value="custom">Custom Solutions</option>
+                  <option className="text-primary" value="">Select Service</option>
+                  <option className="text-primary" value="precast-steps">Precast Concrete Steps</option>
+                  <option className="text-primary" value="window-well">Window Well Covers</option>
                 </select>
               </div>
             </div>

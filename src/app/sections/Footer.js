@@ -1,7 +1,7 @@
 import { Phone, Mail, Facebook, Instagram } from "lucide-react";
 const Footer = () => (
   <footer className="py-16 bg-gray-950 border-t border-gray-800">
-    <div className="container mx-auto p-4 md:p-8 lg:p-12 2xl:p-20">
+    <div className=" p-4 md:p-8 lg:p-12 2xl:p-20">
       <div className="grid md:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center mb-6">
@@ -58,10 +58,10 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="#testimonials"
+                href="/contact-us"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
-                Testimonials
+                Contact Us
               </a>
             </li>
           </ul>
@@ -94,7 +94,7 @@ const Footer = () => (
           <ul className="space-y-4">
             <li className="flex items-start">
               <Phone className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
-              <span className="text-gray-400">4038521114</span>
+              <span className="text-gray-400">(403) 852-1114</span>
             </li>
             <li className="flex items-start">
               <Mail className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
