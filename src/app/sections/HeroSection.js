@@ -177,7 +177,7 @@ const HeroSection = ({ handleScroll }) => {
                         Precast Concrete Steps
                       </option>
                       <option className="text-primary" value="window-well">
-                        Window Well Covers
+                        Window Wells
                       </option>
                       <option className="text-primary" value="custom">
                         Custom Solutions

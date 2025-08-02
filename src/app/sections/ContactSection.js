@@ -121,7 +121,7 @@ const ContactSection = ({ files, setFiles }) => {
                 >
                   <option className="text-primary" value="">Select Service</option>
                   <option className="text-primary" value="precast-steps">Precast Concrete Steps</option>
-                  <option className="text-primary" value="window-well">Window Well Covers</option>
+                  <option className="text-primary" value="window-well">Window Wells</option>
                 </select>
               </div>
             </div>

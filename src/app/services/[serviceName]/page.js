@@ -155,13 +155,13 @@ export default function page() {
             <div className="w-full lg:w-1/2 max-h-[500px] rounded-2xl overflow-hidden relative">
               <img
                 src="/images/wall-covers.png"
-                alt="Window Well Covers"
+                alt="Window Wells"
                 className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>
               <div className="absolute bottom-6 left-6">
                 <h3 className="text-2xl font-bold text-white">
-                  Window Well Covers
+                  Window Wells
                 </h3>
                 <p className="text-gray-300">
                   Safety meets elegance for basement windows
@@ -170,13 +170,13 @@ export default function page() {
             </div>
             <div className=" w-full lg:w-1/2  lg:p-8">
               <h2 className="text-4xl font-bold text-primary mb-6">
-                Window Well Covers
+                Window Wells
               </h2>
               <p className="text-black mb-6">
-                Our window well covers combine structural integrity with modern
+                Our Window Wells combine structural integrity with modern
                 aesthetics. Engineered to withstand heavy snow loads while
                 providing unobstructed natural light and ventilation to basement
-                spaces. Our window well covers combine structural integrity with
+                spaces. Our Window Wells combine structural integrity with
                 modern aesthetics. Engineered to withstand heavy snow loads
                 while providing unobstructed natural light and ventilation to
                 basement spaces.
@@ -237,10 +237,10 @@ export default function page() {
                   Universal Precast Concrete Steps
                 </h2>
                 <p className="text-black mb-6">
-                  Our window well covers combine structural integrity with
+                  Our Window Wells combine structural integrity with
                   modern aesthetics. Engineered to withstand heavy snow loads
                   while providing unobstructed natural light and ventilation to
-                  basement spaces. Our window well covers combine structural
+                  basement spaces. Our Window Wells combine structural
                   integrity with modern aesthetics. Engineered to withstand
                   heavy snow loads while providing unobstructed natural light
                   and ventilation to basement spaces.
@@ -326,10 +326,10 @@ export default function page() {
                   Standard Precast Concrete Steps
                 </h2>
                 <p className="text-black mb-6">
-                  Our window well covers combine structural integrity with
+                  Our Window Wells combine structural integrity with
                   modern aesthetics. Engineered to withstand heavy snow loads
                   while providing unobstructed natural light and ventilation to
-                  basement spaces. Our window well covers combine structural
+                  basement spaces. Our Window Wells combine structural
                   integrity with modern aesthetics. Engineered to withstand
                   heavy snow loads while providing unobstructed natural light
                   and ventilation to basement spaces.

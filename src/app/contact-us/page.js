@@ -99,7 +99,7 @@ export default function page() {
                     <option className="text-primary" value="precast-steps">
                       Precast Concrete Steps
                     </option>
-                    <option className="text-primary" value="window-well">Window Well Covers</option>
+                    <option className="text-primary" value="window-well">Window Wells</option>
                     <option className="text-primary" value="custom">Custom Solutions</option>
                   </select>
                 </div>

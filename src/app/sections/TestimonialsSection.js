@@ -9,7 +9,7 @@ export const TestimonialsSection = () => {
       avatar: "https://placehold.co/100x100/2a4d91/ffffff?text=J"
     },
     {
-      quote: "We've specified YYC PRECAST for 17 projects over 8 years. Their window well covers solved persistent water intrusion issues we had with other suppliers. The durability and aesthetics exceed expectations every time.",
+      quote: "We've specified YYC PRECAST for 17 projects over 8 years. Their Window Wells solved persistent water intrusion issues we had with other suppliers. The durability and aesthetics exceed expectations every time.",
       name: "Sarah Johnson",
       title: "Senior Architect, Urban Design Collective",
       avatar: "https://placehold.co/100x100/1a2a6c/ffffff?text=S"

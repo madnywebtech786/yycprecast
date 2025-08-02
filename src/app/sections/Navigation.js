@@ -71,7 +71,7 @@ const Navigation = () => {
                       href="/services/window-well-covers"
                       className="block px-4 py-2 text-white  transition-colors"
                     >
-                      Window Well Covers
+                      Window Wells
                     </a>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const Navigation = () => {
                       href="/services/window-well-covers"
                       className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                     >
-                      Window Well Covers
+                      Window Wells
                     </a>
                   </div>
                   <a

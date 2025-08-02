@@ -83,7 +83,7 @@ const Footer = () => (
                 href="/services/window-well-covers"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
-                Window Well Covers
+                Window Wells
               </a>
             </li>
           </ul>

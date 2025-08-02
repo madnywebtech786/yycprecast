@@ -10,10 +10,10 @@ export default function page() {
       id: 1,
       img1: "/images/wall-covers.png",
       img2: "/images/heroBg.png",
-      alt: "Window Well Covers",
-      title: "Window Well Covers",
+      alt: "Window Wells",
+      title: "Window Wells",
       subtitle: "Safety meets elegance for basement windows",
-      desc: `Our window well covers combine structural integrity with modern aesthetics. Engineered to withstand heavy snow loads while providing unobstructed natural light and ventilation to basement spaces.`,
+      desc: `Our Window Wells combine structural integrity with modern aesthetics. Engineered to withstand heavy snow loads while providing unobstructed natural light and ventilation to basement spaces.`,
     },
     {
       id: 2,
