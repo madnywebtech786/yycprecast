@@ -15,7 +15,6 @@ const ProcessSection = lazy(() => import("./sections//ProcessSection"));
 const TestimonialsSection = lazy(() =>
   import("./sections//TestimonialsSection")
 );
-const ProjectsSection = lazy(() => import("./sections//ProjectsSection"));
 const ContactSection = lazy(() => import("./sections//ContactSection"));
 const Footer = lazy(() => import("./sections//Footer"));
 
@@ -122,18 +121,6 @@ export default function Home() {
           className="relative overflow-hidden"
         >
           <TestimonialsSection />
-        </motion.section>
-
-        {/* Projects Section */}
-        <motion.section
-          id="projects"
-          variants={sectionVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="relative overflow-hidden"
-        >
-          <ProjectsSection handleScroll={handleScroll} />
         </motion.section>
 
         {/* Contact Section */}

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 import TopBar from "./TopBar";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,71 +34,81 @@ const Navigation = () => {
         <nav>
           <div className="w-full p-4 md:px-8 lg:px-12 2xl:px-20 bg-white">
             <div className="flex items-center justify-between h-16">
-              <a href="/" className="flex items-center space-x-2 group">
-                <span className="text-xl font-space font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light">
-                  YYC PRECAST
-                </span>
-              </a>
+              <Link href="/" className="flex items-center space-x-2 group">
+                <Image src={'/images/logo.svg'} width={100} height={100} className="w-28 h-28" />
+              </Link>
 
               <div className="hidden lg:flex items-center space-x-8">
-                <a
+                <Link
                   href="/"
                   className="nav-link relative text-primary  transition-colors font-medium"
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/about-us"
                   className="nav-link relative text-primary  transition-colors font-medium"
                 >
                   About Us
-                </a>
+                </Link>
 
                 <div className="relative group">
-                  <a
+                  <Link
                     href="#services"
                     className="nav-link relative text-primary  transition-colors font-medium flex items-center"
                   >
                     Our Services
                     <ChevronDown className="h-4 w-4 ml-1" />
-                  </a>
+                  </Link>
                   <div className="absolute left-0 mt-2 w-56 bg-gradient-2 rounded-xl shadow-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                    <a
+                    <Link
                       href="/services/precast-concrete-steps"
                       className="block px-4 py-2 text-white  transition-colors"
                     >
                       Precast Concrete Steps
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/services/window-well-covers"
                       className="block px-4 py-2 text-white  transition-colors"
                     >
                       Window Well Covers
-                    </a>
+                    </Link>
+                    <Link
+                      href="/services/precast-parking-curbs"
+                      className="block px-4 py-2 text-white  transition-colors"
+                    >
+                      Precast Parking Curbs
+                    </Link>
                   </div>
                 </div>
 
-                <a
-                  href="/projects"
+                <Link
+                  href="/projects/all"
                   className="nav-link relative text-primary  transition-colors font-medium"
                 >
                   Projects
-                </a>
+                </Link>
+                <Link
+                  href="/mission"
+                  className="nav-link relative text-primary  transition-colors font-medium"
+                >
+                  Mission
+                </Link>
 
-                <a
+                <Link
                   href="/contact-us"
                   className="nav-link relative text-primary  transition-colors font-medium"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
 
-              <a
+              <Link
                 href="/contact-us"
                 className="hidden lg:block bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary text-white font-medium py-2 px-5 rounded-xl transition-all transform hover:scale-105 shadow-lg hover:shadow-primary/30"
               >
                 Get Quote
-              </a>
+              </Link>
 
               <button
                 className="lg:hidden text-primary "
@@ -129,50 +141,62 @@ const Navigation = () => {
                 className="lg:hidden border-t border-gray-800"
               >
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  <a
+                  <Link
                     href="/"
                     className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                   >
                     Home
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/about-us"
                     className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                   >
                     About Us
-                  </a>
+                  </Link>
                   <div className="pl-4 border-l-2 border-primary">
-                    <a
+                    <Link
                       href="/services/precast-concrete-steps"
                       className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                     >
                       Precast Concrete Steps
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/services/window-well-covers"
                       className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                     >
                       Window Well Covers
-                    </a>
+                    </Link>{" "}
+                    <Link
+                      href="/services/precast-parking-curbs"
+                      className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
+                    >
+                      Precast Parking Curbs
+                    </Link>
                   </div>
-                  <a
-                    href="/projects"
+                  <Link
+                    href="/projects/all"
                     className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                   >
                     Projects
-                  </a>
-                  <a
+                  </Link>
+                  <Link
+                    href="/mission"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
+                  >
+                    Mission
+                  </Link>
+                  <Link
                     href="/contact-us"
                     className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                   >
                     Contact Us
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/contact-us"
                     className="block mt-4 w-full bg-gradient-to-r from-primary to-primary-dark text-white font-medium py-2 px-4 rounded-xl text-center"
                   >
                     Get Quote
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             )}

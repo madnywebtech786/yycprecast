@@ -12,8 +12,9 @@ export const ProcessSection = () => (
         <span className="text-black">Methodology</span>
       </h2>
       <p className="text-xl text-black">
-        A seamless journey from concept to installation, engineered for
-        efficiency and excellence.
+        A smooth, well-planned process from first contact to final installation,
+        ensuring your precast steps, window wells, or parking curbs are
+        delivered and installed efficiently and safely.
       </p>
     </div>
 
@@ -32,12 +33,13 @@ export const ProcessSection = () => (
             1
           </div>
           <h3 className="text-2xl font-bold mb-4 text-white">
-            Precision Engineering
+            Site Assessment & Planning
           </h3>
           <p className="text-gray-300">
-            Our engineers collaborate with your team to develop custom solutions
-            using advanced 3D modeling software, ensuring perfect fit and
-            structural integrity before manufacturing begins.
+            Our team begins by confirming your order details and, if required,
+            visiting your site to take precise measurements. We also provide
+            guidance on preparing your location for easy delivery and safe
+            installation.
           </p>
         </motion.div>
 
@@ -52,12 +54,13 @@ export const ProcessSection = () => (
             2
           </div>
           <h3 className="text-2xl font-bold mb-4 text-white">
-            Advanced Manufacturing
+            Expert Manufacturing & Preparation
           </h3>
           <p className="text-gray-300">
-            Utilizing state-of-the-art casting facilities with
-            computer-controlled precision, we produce components with exacting
-            tolerances in a climate-controlled environment.
+            Using high-quality molds and precision casting techniques, we
+            produce your custom precast components. For stair installations, we
+            coordinate crane delivery and prepare the site by removing old steps
+            if necessary.
           </p>
         </motion.div>
 
@@ -72,12 +75,12 @@ export const ProcessSection = () => (
             3
           </div>
           <h3 className="text-2xl font-bold mb-4 text-white">
-            Seamless Installation
+            Professional Installation
           </h3>
           <p className="text-gray-300">
-            Our certified installation team handles every aspect of on-site
-            assembly with military precision, ensuring your project stays on
-            schedule and meets all safety standards.
+            Our crew expertly positions each unit, ensuring correct placement,
+            stability, and slope. We address any unique site challenges on the
+            spot, making sure the final result is both safe and built to last.
           </p>
         </motion.div>
       </div>

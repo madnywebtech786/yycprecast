@@ -1,4 +1,4 @@
-import { Truck, Leaf, ShieldCheck } from "lucide-react";
+import { Construction, Zap, Leaf } from "lucide-react";
 import { motion } from "framer-motion";
 
 const WhyChooseUsSection = () => (
@@ -10,11 +10,12 @@ const WhyChooseUsSection = () => (
       <h2 className="text-3xl lg:text-4xl font-space font-bold mb-6">
         <span className="text-black">The</span>
         <span className="text-primary mx-2">YYC PRECAST</span>
-        <span className="text-black">Difference</span>
+        <span className="text-black">Advantage</span>
       </h2>
       <p className="text-xl text-black">
-        We don't just manufacture precast concrete we engineer solutions that
-        transform construction projects.
+        From durable steps to secure window wells and sturdy parking curbs, we
+        deliver precast solutions that combine speed, strength, and style
+        trusted across Calgary and surrounding areas.
       </p>
     </div>
 
@@ -27,14 +28,15 @@ const WhyChooseUsSection = () => (
         className="bg-gradient-3 hover:-translate-y-5 rounded-xl p-8 border border-gray-700/50 step-card"
       >
         <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-6">
-          <ShieldCheck className="h-6 w-6 text-white" />
+          <Construction className="h-6 w-6 text-white" />
         </div>
         <h3 className="text-xl font-bold mb-4 text-white">
-          Military-Grade Quality
+          Built for Canadian Weather
         </h3>
         <p className="text-white">
-          Our manufacturing process exceeds ASTM standards with rigorous quality
-          control at every stage, ensuring structural integrity and longevity.
+          Our precast products are designed to handle Calgary’s toughest
+          conditions from harsh freeze thaw cycles to heavy snow loads ensuring
+          they stay strong, safe, and visually appealing for decades.
         </p>
       </motion.div>
 
@@ -46,13 +48,13 @@ const WhyChooseUsSection = () => (
         className="bg-gradient-3 hover:-translate-y-5 rounded-xl p-8 border border-gray-700/50 step-card"
       >
         <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-6">
-          <Truck className="h-6 w-6 text-white" />
+          <Zap className="h-6 w-6 text-white" />
         </div>
         <h3 className="text-xl font-bold mb-4 text-white">Rapid Deployment</h3>
         <p className="text-white">
-          Pre-engineered solutions with 30% faster installation time compared to
-          traditional concrete methods, reducing project timelines
-          significantly.
+          Because our products are pre-engineered and ready to go, installation
+          is up to 30% faster than traditional methods. That means less
+          downtime, reduced labor costs, and quicker project completion.
         </p>
       </motion.div>
 
@@ -67,12 +69,12 @@ const WhyChooseUsSection = () => (
           <Leaf className="h-6 w-6 text-white" />
         </div>
         <h3 className="text-xl font-bold mb-4 text-white">
-          Sustainable Innovation
+          Sustainable & Smart
         </h3>
         <p className="text-white">
-          Our eco-friendly concrete mixes incorporate recycled materials while
-          maintaining superior strength, reducing environmental impact without
-          compromise.
+          We use efficient manufacturing processes and sustainable materials
+          whenever possible, reducing waste while delivering top-tier quality
+          and performance you can count on.
         </p>
       </motion.div>
     </div>

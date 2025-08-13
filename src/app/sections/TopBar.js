@@ -5,25 +5,25 @@ const TopBar = () => (
     <div className="w-full p-4 md:px-8 lg:px-12 2xl:px-20 flex flex-wrap justify-between items-center">
       <div className="flex space-x-6">
         <a
-          href="mailto:yycprecast2@gmail.com"
-          className="flex items-center hover:text-primary transition-colors"
+          href="mailto:yycprecast@gmail.com"
+          className="flex items-center  transition-colors"
         >
           <Mail className="h-4 w-4 mr-1" />
-          yycprecast2@gmail.com
+          yycprecast@gmail.com
         </a>
         <a
           href="tel:+14038521114"
-          className="flex items-center hover:text-primary transition-colors"
+          className="flex items-center  transition-colors"
         >
           <Phone className="h-4 w-4 mr-1" />
           (403) 852-1114
         </a>
       </div>
       <div className="hidden lg:flex space-x-4 mt-2 md:mt-0 ">
-        <a href="#" className="hover:text-primary transition-colors">
+        <a href="#" className=" transition-colors">
           <Facebook size={20} />
         </a>
-        <a href="#" className="hover:text-primary transition-colors">
+        <a href="#" className=" transition-colors">
           <Instagram size={20} />
         </a>
       </div>

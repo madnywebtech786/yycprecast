@@ -38,7 +38,7 @@ body {
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url("/images/heroBg.png");
+    url("/images/heroBg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@ body {
 }
 
 .file-upload-area {
-  border: 2px dashed white;
+  border: 2px dashed #3763ba;
   transition: all 0.3s ease;
 }
 
