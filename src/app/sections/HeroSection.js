@@ -233,10 +233,10 @@ const HeroSection = ({ handleScroll }) => {
                           "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'><path d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/></svg>\")",
                       }}
                     >
-                      <option value="">Select Service</option>
-                      <option value="precast-steps">Precast Concrete Steps</option>
-                      <option value="window-well">Window Well Covers</option>
-                      <option value="custom">Custom Solutions</option>
+                      <option className="text-primary" value="">Select Service</option>
+                      <option className="text-primary" value="precast-steps">Precast Concrete Steps</option>
+                      <option className="text-primary" value="window-well">Window Well</option>
+                      <option className="text-primary" value="precast-parking-curbs">Precast Parking Curbs</option>
                     </select>
                     {errors.service && <p className="text-red-400 text-xs mt-1">{errors.service}</p>}
                   </div>

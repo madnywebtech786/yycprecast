@@ -8,7 +8,7 @@ export default function MissionVision() {
     <>
       <Breadcrumb name={"Mission & Vission"} />
       <section className="p-6 md:p-8 lg:p-12 2xl:p-20">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
             {/* Top-left: MISSION (bg-white) */}
             <div className="relative order-1 md:order-1">
@@ -24,6 +24,13 @@ export default function MissionVision() {
                   product we manufacture is built with precision, strength, and
                   attention to detail.
                   <br />
+                  <br />
+                  Our mission is to design, manufacture, and deliver
+                  high-quality precast concrete steps that exceed industry
+                  standards for safety, durability, and aesthetics while
+                  providing exceptional service, on-time delivery, and
+                  long-lasting value to builders, contractors, and property
+                  owners. <br />
                   <br />
                   We are committed to delivering more than just concrete we
                   deliver solutions. From the first consultation to final
@@ -83,6 +90,12 @@ export default function MissionVision() {
                   manufacturing technology, adopting eco-friendly processes, and
                   continually improving our designs, we aim to contribute to a
                   stronger, safer, and more sustainable community.
+                  <br />
+                  <br />
+                  To be the leading provider of durable, innovative, and
+                  architecturally refined precast concrete products setting the
+                  standard for safety, strength, and style in residential and
+                  commercial construction across North America.
                   <br />
                   <br />
                   YYC Precast is not just building concrete structures we are

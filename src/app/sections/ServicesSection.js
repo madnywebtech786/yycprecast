@@ -103,8 +103,8 @@ const ServicesSection = () => (
       >
         <div className="h-64 overflow-hidden relative">
           <img
-            src="/images/wall-covers.webp"
-            alt="Window Well Covers"
+            src="/images/window-wells.webp"
+            alt="Window Well"
             className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>
@@ -148,7 +148,7 @@ const ServicesSection = () => (
             </li>
           </ul>
 
-          <Link href={"/services/window-well-covers"}>
+          <Link href={"/services/window-well"}>
             <button className="bg-primary text-white p-2 px-4 text-sm rounded-2xl absolute left-8 bottom-4">
               Read More
             </button>
@@ -166,7 +166,7 @@ const ServicesSection = () => (
         <div className="h-64 overflow-hidden relative">
           <img
             src="/images/parking-crub.webp"
-            alt="Window Well Covers"
+            alt="Window Well"
             className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>

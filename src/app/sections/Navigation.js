@@ -68,10 +68,10 @@ const Navigation = () => {
                       Precast Concrete Steps
                     </Link>
                     <Link
-                      href="/services/window-well-covers"
+                      href="/services/window-well"
                       className="block px-4 py-2 text-white  transition-colors"
                     >
-                      Window Well Covers
+                      Window Well
                     </Link>
                     <Link
                       href="/services/precast-parking-curbs"
@@ -161,10 +161,10 @@ const Navigation = () => {
                       Precast Concrete Steps
                     </Link>
                     <Link
-                      href="/services/window-well-covers"
+                      href="/services/window-well"
                       className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                     >
-                      Window Well Covers
+                      Window Well
                     </Link>{" "}
                     <Link
                       href="/services/precast-parking-curbs"

@@ -109,7 +109,10 @@ const ContactSection = ({ files, setFiles }) => {
                     Precast Concrete Steps
                   </option>
                   <option className="text-primary" value="window-well">
-                    Window Well Covers
+                    Window Well
+                  </option>
+                    <option className="text-primary" value="precast-parking-curbs">
+                    Precast Parking Curbs
                   </option>
                 </select>
               </div>

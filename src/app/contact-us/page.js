@@ -203,8 +203,8 @@ export default function page() {
                   >
                     <option className="text-primary" value="">Select Service</option>
                     <option className="text-primary" value="precast-steps">Precast Concrete Steps</option>
-                    <option className="text-primary" value="window-well">Window Well Covers</option>
-                    <option className="text-primary" value="custom">Custom Solutions</option>
+                    <option className="text-primary" value="window-well">Window Well</option>
+                    <option className="text-primary" value="precast-parking-curbs">Precast Parking Curbs</option>
                   </select>
                   {errors.service && <p className="text-red-400 text-xs mt-1">{errors.service}</p>}
                 </div>

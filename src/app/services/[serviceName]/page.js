@@ -144,7 +144,7 @@ export default function page() {
         ) : (
           ""
         )}
-        {name == "window-well-covers" ? (
+        {name == "window-well" ? (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -156,8 +156,8 @@ export default function page() {
               <Image
                 width={800}
                 height={800}
-                src="/images/wall-covers.webp"
-                alt="Window Well Covers"
+                src="/images/window-wells.webp"
+                alt="Window Well"
                 className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>
