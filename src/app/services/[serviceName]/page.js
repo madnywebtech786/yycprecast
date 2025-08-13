@@ -163,7 +163,7 @@ export default function page() {
               <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>
               <div className="absolute bottom-6 left-6">
                 <h3 className="text-2xl font-bold text-white">
-                  Window Well Covers
+                  Window Wells
                 </h3>
                 <p className="text-gray-300">
                   Safety meets elegance for basement windows
@@ -172,7 +172,7 @@ export default function page() {
             </div>
             <div className=" w-full lg:w-1/2  lg:p-8">
               <h2 className="text-4xl font-bold text-primary mb-6">
-                Window Well Covers
+                Window Wells
               </h2>
               <p className="text-black mb-6">
                 Our precast window wells combine durability, safety, and
