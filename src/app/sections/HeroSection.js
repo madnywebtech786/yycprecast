@@ -317,7 +317,7 @@ const HeroSection = ({ handleScroll }) => {
                     <p className="text-xs text-white mt-2">* File attachment is required for quote processing</p>
                   </div>
 
-                  {serverMessage && <p className="text-sm text-white mt-2">{serverMessage}</p>}
+                  {serverMessage && <p className="text-sm bg-green-600 rounded-md p-2 text-white mt-2">{serverMessage}</p>}
 
                   <motion.button
                     type="button"

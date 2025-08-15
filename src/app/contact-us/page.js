@@ -33,7 +33,8 @@ export default function page() {
     setFiles((prev) => {
       const merged = [...prev];
       for (const f of arr) {
-        if (!merged.some((m) => m.name === f.name && m.size === f.size)) merged.push(f);
+        if (!merged.some((m) => m.name === f.name && m.size === f.size))
+          merged.push(f);
       }
       return merged;
     });
@@ -79,7 +80,8 @@ export default function page() {
     if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
     else {
       const phoneRe = /^[+0-9()\-\s]{6,30}$/;
-      if (!phoneRe.test(formData.phone)) newErrors.phone = "Enter a valid phone number.";
+      if (!phoneRe.test(formData.phone))
+        newErrors.phone = "Enter a valid phone number.";
     }
     if (!formData.service) newErrors.service = "Please select a service.";
     if (!formData.message.trim()) newErrors.message = "Message is required.";
@@ -125,13 +127,17 @@ export default function page() {
       });
 
       if (res.ok) {
-        setServerMessage("Your request has been sent — we will contact you soon.");
+        setServerMessage(
+          "Your request has been sent — we will contact you soon."
+        );
         setFormData({ name: "", phone: "", service: "", message: "" });
         setFiles([]);
         setErrors({});
       } else {
         const json = await res.json().catch(() => null);
-        setServerMessage(json?.error || "Server error — please try again later.");
+        setServerMessage(
+          json?.error || "Server error — please try again later."
+        );
       }
     } catch (err) {
       setServerMessage(err?.message || "Network error");
@@ -155,13 +161,17 @@ export default function page() {
             <div className="w-36 h-36 rounded-full z-10 absolute -bottom-5 right-2 bg-gradient-2 zoom-animation"></div>
 
             <div className="relative z-20 bg-gradient-1  backdrop-blur-sm lg:w-4/5 mx-auto !h-1/2 rounded-2xl p-4 shadow-2xl">
-              <h2 className="text-2xl font-bold mb-6 text-white">Request a Quote</h2>
+              <h2 className="text-2xl font-bold mb-6 text-white">
+                Request a Quote
+              </h2>
 
               {/* keep form wrapper for semantics but control submit to keep styling same */}
               <div className="space-y-4">
                 <div className="flex gap-5">
                   <div className="w-full">
-                    <label className="block text-sm font-medium text-white mb-2">Full Name</label>
+                    <label className="block text-sm font-medium text-white mb-2">
+                      Full Name
+                    </label>
                     <input
                       type="text"
                       name="name"
@@ -171,11 +181,15 @@ export default function page() {
                       placeholder="John Doe"
                       required
                     />
-                    {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name}</p>}
+                    {errors.name && (
+                      <p className="text-red-400 text-xs mt-1">{errors.name}</p>
+                    )}
                   </div>
 
                   <div className="w-full">
-                    <label className="block text-sm font-medium text-white mb-2">Phone Number</label>
+                    <label className="block text-sm font-medium text-white mb-2">
+                      Phone Number
+                    </label>
                     <input
                       type="tel"
                       name="phone"
@@ -185,12 +199,18 @@ export default function page() {
                       placeholder="+1 (555) 123-4567"
                       required
                     />
-                    {errors.phone && <p className="text-red-400 text-xs mt-1">{errors.phone}</p>}
+                    {errors.phone && (
+                      <p className="text-red-400 text-xs mt-1">
+                        {errors.phone}
+                      </p>
+                    )}
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">Service Required</label>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Service Required
+                  </label>
                   <select
                     name="service"
                     value={formData.service}
@@ -201,16 +221,33 @@ export default function page() {
                         "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'><path d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/></svg>\")",
                     }}
                   >
-                    <option className="text-primary" value="">Select Service</option>
-                    <option className="text-primary" value="precast-steps">Precast Concrete Steps</option>
-                    <option className="text-primary" value="window-well">Window Well</option>
-                    <option className="text-primary" value="precast-parking-curbs">Precast Parking Curbs</option>
+                    <option className="text-primary" value="">
+                      Select Service
+                    </option>
+                    <option className="text-primary" value="precast-steps">
+                      Precast Concrete Steps
+                    </option>
+                    <option className="text-primary" value="window-well">
+                      Window Well
+                    </option>
+                    <option
+                      className="text-primary"
+                      value="precast-parking-curbs"
+                    >
+                      Precast Parking Curbs
+                    </option>
                   </select>
-                  {errors.service && <p className="text-red-400 text-xs mt-1">{errors.service}</p>}
+                  {errors.service && (
+                    <p className="text-red-400 text-xs mt-1">
+                      {errors.service}
+                    </p>
+                  )}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">Message</label>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Message
+                  </label>
                   <textarea
                     name="message"
                     value={formData.message}
@@ -220,16 +257,24 @@ export default function page() {
                     placeholder="Tell us about your project..."
                     required
                   ></textarea>
-                  {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message}</p>}
+                  {errors.message && (
+                    <p className="text-red-400 text-xs mt-1">
+                      {errors.message}
+                    </p>
+                  )}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">Attachment (PDF, JPG, PNG)</label>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Attachment (PDF, JPG, PNG)
+                  </label>
                   <div
                     className=" bg-white/20 rounded-xl p-4 text-center cursor-pointer border-dashed border-2 border-white hover:border-primary transition-colors"
                     onDragOver={handleDragOver}
                     onDrop={handleDrop}
-                    onClick={() => document.getElementById("file-upload")?.click()}
+                    onClick={() =>
+                      document.getElementById("file-upload")?.click()
+                    }
                   >
                     <input
                       type="file"
@@ -242,37 +287,61 @@ export default function page() {
                     <div className="flex flex-col items-center">
                       <FileText className="h-6 w-6 text-white mb-3" />
                       <p className="text-white">
-                        Drag & drop files here or <span className="text-primary font-medium">browse</span>
+                        Drag & drop files here or{" "}
+                        <span className="text-primary font-medium">browse</span>
                       </p>
-                      <p className="text-xs text-white mt-1">Supports PDF, JPG, PNG (Max 10MB)</p>
+                      <p className="text-xs text-white mt-1">
+                        Supports PDF, JPG, PNG (Max 10MB)
+                      </p>
                     </div>
                   </div>
-                  <p className="text-xs text-white mt-2">* File attachment is required for quote processing</p>
+                  <p className="text-xs text-white mt-2">
+                    * File attachment is required for quote processing
+                  </p>
 
-                  {errors.files && <p className="text-red-400 text-xs mt-2">{errors.files}</p>}
+                  {errors.files && (
+                    <p className="text-red-400 text-xs mt-2">{errors.files}</p>
+                  )}
 
                   {/* attached files list */}
                   {files.length > 0 && (
                     <ul className="mt-2 space-y-1">
                       {files.map((f, i) => (
-                        <li key={`${f.name}-${f.size}`} className="flex items-center justify-between bg-white/5 rounded-md px-3 py-2 text-xs">
+                        <li
+                          key={`${f.name}-${f.size}`}
+                          className="flex items-center justify-between bg-white/5 rounded-md px-3 py-2 text-xs"
+                        >
                           <div className="flex items-center gap-3 truncate">
                             <span className="inline-flex items-center justify-center w-8 h-8 rounded bg-white/10 text-white text-xs font-medium">
                               {getExt(f.name) || "file"}
                             </span>
                             <div className="truncate">
-                              <div className="font-medium truncate">{f.name}</div>
-                              <div className="text-[11px] text-white/70">{humanFileSize(f.size)}</div>
+                              <div className="font-medium truncate text-white">
+                                {f.name}
+                              </div>
+                              <div className="text-[11px] text-white/70">
+                                {humanFileSize(f.size)}
+                              </div>
                             </div>
                           </div>
-                          <button type="button" onClick={() => removeFile(i)} className="ml-3 text-sm text-red-400">Remove</button>
+                          <button
+                            type="button"
+                            onClick={() => removeFile(i)}
+                            className="ml-3 text-sm text-red-400"
+                          >
+                            Remove
+                          </button>
                         </li>
                       ))}
                     </ul>
                   )}
                 </div>
 
-                {serverMessage && <p className="text-sm text-white mt-2">{serverMessage}</p>}
+                {serverMessage && (
+                  <p className="text-sm bg-green-600 rounded-md p-2 text-white mt-2">
+                    {serverMessage}
+                  </p>
+                )}
 
                 <motion.button
                   type="submit"
