@@ -79,7 +79,7 @@ export const AboutSection = () => (
               className="rounded-xl overflow-hidden image-hover"
             >
               <img
-                src="/images/about-us1.webp"
+                src="/images/precast.webp"
                 alt="Factory"
                 className="w-full h-full max-h-[400px] object-cover transform transition-transform duration-700 hover:scale-105"
               />
@@ -106,9 +106,9 @@ export const AboutSection = () => (
             className="mt-8 rounded-xl overflow-hidden image-hover"
           >
             <img
-              src="/images/about-us2.webp"
+              src="/images/about-3.webp"
               alt="Team"
-              className="w-full h-full  object-cover transform transition-transform duration-700 hover:scale-105"
+              className="w-full h-full max-h-[400px]  object-cover transform transition-transform duration-700 hover:scale-105"
             />
           </motion.div>
         </div>

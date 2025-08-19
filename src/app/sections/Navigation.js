@@ -82,12 +82,12 @@ const Navigation = () => {
                   </div>
                 </div>
 
-                <Link
+                {/* <Link
                   href="/projects/all"
                   className="nav-link relative text-primary  transition-colors font-medium"
                 >
                   Projects
-                </Link>
+                </Link> */}
                 <Link
                   href="/mission"
                   className="nav-link relative text-primary  transition-colors font-medium"
@@ -173,12 +173,12 @@ const Navigation = () => {
                       Precast Parking Curbs
                     </Link>
                   </div>
-                  <Link
+                  {/* <Link
                     href="/projects/all"
                     className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"
                   >
                     Projects
-                  </Link>
+                  </Link> */}
                   <Link
                     href="/mission"
                     className="block px-3 py-2 rounded-md text-base font-medium text-primary  hover:bg-primary/30"

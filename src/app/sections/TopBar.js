@@ -23,7 +23,7 @@ const TopBar = () => (
         <a href="#" className=" transition-colors">
           <Facebook size={20} />
         </a>
-        <a href="#" className=" transition-colors">
+        <a href="https://www.instagram.com/yycprecast/?igsh=MTJzcjJtMHNtMW91Ng%3D%3D#" className=" transition-colors">
           <Instagram size={20} />
         </a>
       </div>

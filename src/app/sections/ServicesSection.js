@@ -48,7 +48,7 @@ const ServicesSection = () => (
       >
         <div className="h-64 overflow-hidden relative">
           <img
-            src="/images/steps.webp"
+            src="/images/precast.webp"
             alt="Precast Concrete Steps"
             className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
           />
@@ -103,7 +103,7 @@ const ServicesSection = () => (
       >
         <div className="h-64 overflow-hidden relative">
           <img
-            src="/images/window-wells.webp"
+            src="/images/window2.webp"
             alt="Window Well"
             className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
           />

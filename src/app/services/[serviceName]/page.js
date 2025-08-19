@@ -15,17 +15,21 @@ import "swiper/css/autoplay";
 export default function page() {
   const params = useParams();
   const name = params.serviceName;
-  const universalGallery = [
-    "/images/universal1.webp",
-    "/images/universal2.webp",
-    "/images/universal3.webp",
-    "/images/universal4.webp",
+  const exposedGallery = [
+    "/images/expose1.webp",
+    "/images/expose2.webp",
+    "/images/expose3.webp",
+    "/images/expose1.webp",
+    "/images/expose2.webp",
+    "/images/expose3.webp",
   ];
-  const standardGallery = [
-    "/images/standard.webp",
-    "/images/standard3.webp",
-    "/images/standard4.webp",
-    "/images/standard2.webp",
+  const broomGallery = [
+    "/images/broom1.webp",
+    "/images/broom2.webp",
+    "/images/broom3.webp",
+    "/images/broom1.webp",
+    "/images/broom2.webp",
+    "/images/broom3.webp",
   ];
   return (
     <>
@@ -76,13 +80,13 @@ export default function page() {
                 <br />
                 We offer two main categories to meet your needs Universal
                 Precast Concrete Steps, which are designed to fit a wide range
-                of entryways with minimal adjustments, and Standard Precast
-                Concrete Steps, ideal for common residential and
-                light-commercial applications. Both options are available in a
-                variety of dimensions, finishes, and reinforcement levels,
-                ensuring the perfect match for your property. From single-step
-                landings to multi-step assemblies, YYC Precast delivers
-                precision craftsmanship with every installation.
+                of entryways with minimal adjustments, and Broom Concrete Steps,
+                ideal for common residential and light-commercial applications.
+                Both options are available in a variety of dimensions, finishes,
+                and reinforcement levels, ensuring the perfect match for your
+                property. From single-step landings to multi-step assemblies,
+                YYC Precast delivers precision craftsmanship with every
+                installation.
               </p>
             </div>
           </motion.div>
@@ -93,22 +97,22 @@ export default function page() {
           <div className="grid lg:grid-cols-2 gap-10 mt-20">
             <div className="relative rounded-xl border-2 border-primary overflow-hidden group">
               <Image
-                src={"/images/universal.webp"}
+                src={"/images/expose.webp"}
                 width={300}
                 height={300}
-                className="w-full h-full max-h-[350px] object-cover relative z-10 rounded-xl group-hover:scale-110 duration-200"
+                className="w-full h-full max-h-[350px] object-cover object-top relative z-10 rounded-xl group-hover:scale-110 duration-200"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-20 rounded-xl"></div>
 
               <div className="absolute bottom-6 left-6 z-30">
                 <h3 className="text-2xl font-bold text-white">
-                  Universal Precast Concrete Steps
+                  Exposed Concrete Steps
                 </h3>
                 <p className="text-white">
                   Architectural precision for residential & commercial
                   applications
                 </p>
-                <Link href={"/services/universal-precast-steps"}>
+                <Link href={"/services/exposed-precast-steps"}>
                   <button className="p-2 text-primary bg-white text-xs rounded-2xl mt-3 cursor-pointer ">
                     Read More
                   </button>
@@ -118,22 +122,22 @@ export default function page() {
 
             <div className="relative rounded-xl border-2 border-primary overflow-hidden group">
               <Image
-                src={"/images/standard.webp"}
+                src={"/images/broom.webp"}
                 width={300}
                 height={300}
-                className="w-full h-full max-h-[350px] object-cover relative z-10 rounded-xl group-hover:scale-110 duration-200"
+                className="w-full h-full max-h-[350px] object-cover object-top relative z-10 rounded-xl group-hover:scale-110 duration-200"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-20 rounded-xl"></div>
 
               <div className="absolute bottom-6 left-6 z-30">
                 <h3 className="text-2xl font-bold text-white">
-                  Standard Precast Concrete Steps
+                  Broom Concrete Steps
                 </h3>
                 <p className="text-white">
                   Architectural precision for residential & commercial
                   applications
                 </p>
-                <Link href={"/services/standard-precast-steps"}>
+                <Link href={"/services/broom-precast-steps"}>
                   <button className="p-2 text-primary bg-white text-xs rounded-2xl mt-3 cursor-pointer ">
                     Read More
                   </button>
@@ -156,15 +160,13 @@ export default function page() {
               <Image
                 width={800}
                 height={800}
-                src="/images/window-wells.webp"
+                src="/images/window2.webp"
                 alt="Window Well"
                 className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>
               <div className="absolute bottom-6 left-6">
-                <h3 className="text-2xl font-bold text-white">
-                  Window Wells
-                </h3>
+                <h3 className="text-2xl font-bold text-white">Window Wells</h3>
                 <p className="text-gray-300">
                   Safety meets elegance for basement windows
                 </p>
@@ -253,7 +255,7 @@ export default function page() {
           ""
         )}
 
-        {name == "universal-precast-steps" ? (
+        {name == "exposed-precast-steps" ? (
           <>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -266,14 +268,14 @@ export default function page() {
                 <Image
                   width={800}
                   height={800}
-                  src="/images/universal.webp"
-                  alt="Universal Precast Concrete Steps"
+                  src="/images/expose.webp"
+                  alt="Exposed Concrete Steps"
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>
                 <div className="absolute bottom-6 left-6">
                   <h3 className="text-2xl font-bold text-white">
-                    Universal Precast Concrete Steps
+                    Exposed Concrete Steps
                   </h3>
                   <p className="text-gray-300">
                     Safety meets elegance for basement windows
@@ -282,7 +284,7 @@ export default function page() {
               </div>
               <div className=" w-full lg:w-1/2  lg:p-8">
                 <h2 className="text-4xl font-bold text-primary mb-6">
-                  Universal Precast Concrete Steps
+                  Exposed Concrete Steps
                 </h2>
                 <p className="text-black mb-6">
                   Our Universal Steps are designed for maximum versatility,
@@ -333,13 +335,13 @@ export default function page() {
               autoplay={{ delay: 3000 }}
               loop={true}
             >
-              {universalGallery.map((src, idx) => (
+              {exposedGallery.map((src, idx) => (
                 <SwiperSlide key={idx}>
                   <Image
                     src={src}
                     width={400}
                     height={400}
-                    className="w-full  max-h-[450px] rounded-xl"
+                    className="w-full  h-[450px] rounded-xl"
                   />
                 </SwiperSlide>
               ))}
@@ -349,7 +351,7 @@ export default function page() {
           ""
         )}
 
-        {name == "standard-precast-steps" ? (
+        {name == "broom-precast-steps" ? (
           <>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -362,14 +364,14 @@ export default function page() {
                 <Image
                   width={800}
                   height={800}
-                  src="/images/standard.webp"
-                  alt="Standard Precast Concret Steps"
+                  src="/images/broom.webp"
+                  alt="Broom Concret Steps"
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-dark to-transparent opacity-40"></div>
                 <div className="absolute bottom-6 left-6">
                   <h3 className="text-2xl font-bold text-white">
-                    Standard Precast Concrete Steps
+                    Broom Concrete Steps
                   </h3>
                   <p className="text-gray-300">
                     Safety meets elegance for basement windows
@@ -378,7 +380,7 @@ export default function page() {
               </div>
               <div className=" w-full lg:w-1/2  lg:p-8">
                 <h2 className="text-4xl font-bold text-primary mb-6">
-                  Standard Precast Concrete Steps
+                  Broom Concrete Steps
                 </h2>
                 <p className="text-black mb-6">
                   Our Standard Steps are built to meet common residential and
@@ -428,13 +430,13 @@ export default function page() {
               autoplay={{ delay: 3000 }}
               loop={true}
             >
-              {standardGallery.map((src, idx) => (
+              {broomGallery.map((src, idx) => (
                 <SwiperSlide key={idx}>
                   <Image
                     src={src}
                     width={400}
                     height={400}
-                    className="w-full  max-h-[450px] rounded-xl"
+                    className="w-full  h-[450px] rounded-xl"
                   />
                 </SwiperSlide>
               ))}

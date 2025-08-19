@@ -22,7 +22,7 @@ const Footer = () => (
               <Facebook size={20} />
             </Link>
             <Link
-              href="#"
+              href="https://www.instagram.com/yycprecast/?igsh=MTJzcjJtMHNtMW91Ng%3D%3D#"
               className="text-white  transition-colors"
             >
               <Instagram size={20} />
@@ -50,12 +50,12 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 href="#projects"
                 className="text-white  transition-colors"
               >
                 Projects
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link
