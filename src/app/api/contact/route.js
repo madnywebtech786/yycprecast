@@ -85,7 +85,7 @@ let html = `
   try {
     await transporter.sendMail({
       from: `"Website Contact" <${process.env.GMAIL_USER}>`,
-      to: "fahadjawad596@gmail.com",
+      to: "yycprecast2@gmail.com",
       subject: `New contact from ${name}`,
       html,
       attachments,
