@@ -138,7 +138,7 @@ const Navigation = () => {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
-                className="lg:hidden border-t border-gray-800"
+                className="lg:hidden"
               >
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                   <Link

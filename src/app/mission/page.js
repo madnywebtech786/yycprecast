@@ -7,7 +7,7 @@ export default function MissionVision() {
   return (
     <>
       <Breadcrumb name={"Mission & Vission"} />
-      <section className="p-6 md:p-8 lg:p-12 2xl:p-20">
+      <section className="p-6 md:p-8 lg:p-12 2xl:p-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
             {/* Top-left: MISSION (bg-white) */}

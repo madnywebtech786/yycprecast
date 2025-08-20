@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden dark:bg-white`}
       >
         <Navigation />
         {children}

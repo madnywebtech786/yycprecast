@@ -149,7 +149,7 @@ export default function page() {
   return (
     <>
       <Breadcrumb name={"Contact Us"} />
-      <div className=" p-6 md:p-8 lg:p-12 2xl:p-20">
+      <div className=" p-6 md:p-8 lg:p-12 2xl:p-20 bg-white">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}

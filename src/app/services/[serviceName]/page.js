@@ -34,7 +34,7 @@ export default function page() {
   return (
     <>
       <Breadcrumb name={name.replace("-", " ")} />
-      <div className=" p-6 md:p-8 lg:p-12 2xl:p-20">
+      <div className=" p-6 md:p-8 lg:p-12 2xl:p-20 dark:!bg-white">
         {name == "precast-concrete-steps" ? (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
