@@ -54,8 +54,8 @@ export default function MissionVision() {
             <div className="flex items-center justify-center order-2 md:order-2">
               <Image
                 src={"/images/mission.webp"}
-                width={600}
-                height={600}
+                width={500}
+                height={500}
                 className="rounded-xl max-h-[500px]"
               />
             </div>
@@ -64,8 +64,8 @@ export default function MissionVision() {
             <div className="flex items-center justify-center order-4 md:order-3">
               <Image
                 src={"/images/vission.webp"}
-                width={600}
-                height={600}
+                width={500}
+                height={500}
                 className="rounded-xl max-h-[500px]"
               />
             </div>
