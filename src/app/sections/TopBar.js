@@ -5,11 +5,11 @@ const TopBar = () => (
     <div className="w-full p-4 md:px-8 lg:px-12 2xl:px-20 flex flex-wrap justify-between items-center">
       <div className="flex space-x-6">
         <a
-          href="mailto:yycprecast@gmail.com"
+          href="mailto:yycprecast2@gmail.com"
           className="flex items-center  transition-colors"
         >
           <Mail className="h-4 w-4 mr-1" />
-          yycprecast@gmail.com
+          yycprecast2@gmail.com
         </a>
         <a
           href="tel:+14038521114"
