@@ -97,7 +97,7 @@ export default function page() {
           <div className="grid lg:grid-cols-2 gap-10 mt-20">
             <div className="relative rounded-xl border-2 border-primary overflow-hidden group">
               <Image
-                src={"/images/expose.webp"}
+                src={"/images/exposed-step.jpg"}
                 width={300}
                 height={300}
                 className="w-full h-full max-h-[350px] object-cover object-top relative z-10 rounded-xl group-hover:scale-110 duration-200"

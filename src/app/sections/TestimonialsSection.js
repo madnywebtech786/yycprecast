@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "YYC PRECAST transformed our high-rise project timeline. Their precast stair systems installed in 1/3 the time of traditional methods, with zero quality compromises. The engineering support was exceptional.",
+      quote: "YYC PRECAST transformed our residential project timeline. Their precast stair systems installed in 1/3 the time of traditional methods, with zero quality compromises. The engineering support was exceptional.",
       name: "John Smith",
       title: "Project Director, Skyline Developments",
       avatar: "https://placehold.co/100x100/2a4d91/ffffff?text=J"
