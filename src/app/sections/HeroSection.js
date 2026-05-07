@@ -7,6 +7,7 @@ const HeroSection = ({ handleScroll }) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    email: "",
     service: "",
     message: "",
   });
@@ -31,6 +32,11 @@ const HeroSection = ({ handleScroll }) => {
     else {
       const phoneRe = /^[+0-9()\-\s]{6,30}$/;
       if (!phoneRe.test(formData.phone)) newErrors.phone = "Enter a valid phone number.";
+    }
+    if (!formData.email.trim()) newErrors.email = "Email is required.";
+    else {
+      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRe.test(formData.email)) newErrors.email = "Enter a valid email address.";
     }
     if (!formData.service) newErrors.service = "Please select a service.";
     if (!formData.message.trim()) newErrors.message = "Message is required.";
@@ -93,6 +99,7 @@ const HeroSection = ({ handleScroll }) => {
       const fd = new FormData();
       fd.append("name", formData.name);
       fd.append("phone", formData.phone);
+      fd.append("email", formData.email);
       fd.append("service", formData.service);
       fd.append("message", formData.message);
       files.forEach((f) => fd.append("attachments", f));
@@ -104,7 +111,7 @@ const HeroSection = ({ handleScroll }) => {
 
       if (res.ok) {
         setServerMessage("Your request has been sent — we will contact you soon.");
-        setFormData({ name: "", phone: "", service: "", message: "" });
+        setFormData({ name: "", phone: "", email: "", service: "", message: "" });
         setFiles([]);
       } else {
         const json = await res.json().catch(() => null);
@@ -219,6 +226,19 @@ const HeroSection = ({ handleScroll }) => {
                       />
                       {errors.phone && <p className="text-red-400 text-xs mt-1">{errors.phone}</p>}
                     </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-white mb-2">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full border border-white !text-white placeholder:text-white rounded-lg px-2 py-2 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                      placeholder="john@example.com"
+                    />
+                    {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email}</p>}
                   </div>
 
                   <div>

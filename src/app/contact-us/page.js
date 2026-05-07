@@ -8,6 +8,7 @@ export default function page() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    email: "",
     service: "",
     message: "",
   });
@@ -83,6 +84,12 @@ export default function page() {
       if (!phoneRe.test(formData.phone))
         newErrors.phone = "Enter a valid phone number.";
     }
+    if (!formData.email.trim()) newErrors.email = "Email is required.";
+    else {
+      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRe.test(formData.email))
+        newErrors.email = "Enter a valid email address.";
+    }
     if (!formData.service) newErrors.service = "Please select a service.";
     if (!formData.message.trim()) newErrors.message = "Message is required.";
     if (files.length < 1) newErrors.files = "Please attach at least one file.";
@@ -117,6 +124,7 @@ export default function page() {
       const fd = new FormData();
       fd.append("name", formData.name);
       fd.append("phone", formData.phone);
+      fd.append("email", formData.email);
       fd.append("service", formData.service);
       fd.append("message", formData.message);
       files.forEach((f) => fd.append("attachments", f));
@@ -130,7 +138,7 @@ export default function page() {
         setServerMessage(
           "Your request has been sent — we will contact you soon."
         );
-        setFormData({ name: "", phone: "", service: "", message: "" });
+        setFormData({ name: "", phone: "", email: "", service: "", message: "" });
         setFiles([]);
         setErrors({});
       } else {
@@ -205,6 +213,26 @@ export default function page() {
                       </p>
                     )}
                   </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full border border-white bg-white/20 !text-white placeholder:text-white rounded-lg px-2 py-2 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                    placeholder="john@example.com"
+                    required
+                  />
+                  {errors.email && (
+                    <p className="text-red-400 text-xs mt-1">
+                      {errors.email}
+                    </p>
+                  )}
                 </div>
 
                 <div>
