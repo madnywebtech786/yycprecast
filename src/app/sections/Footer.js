@@ -15,10 +15,7 @@ const Footer = () => (
             excellence and structural integrity.
           </p>
           <div className="flex space-x-4">
-            <Link
-              href="#"
-              className="text-white  transition-colors"
-            >
+            <Link href="#" className="text-white  transition-colors">
               <Facebook size={20} />
             </Link>
             <Link
@@ -34,18 +31,12 @@ const Footer = () => (
           <h3 className="text-white font-bold text-lg mb-6">Quick Links</h3>
           <ul className="space-y-3">
             <li>
-              <Link
-                href="/"
-                className="text-white  transition-colors"
-              >
+              <Link href="/" className="text-white  transition-colors">
                 Home
               </Link>
             </li>
             <li>
-              <Link
-                href="#about"
-                className="text-white  transition-colors"
-              >
+              <Link href="#about" className="text-white  transition-colors">
                 About Us
               </Link>
             </li>
@@ -114,7 +105,9 @@ const Footer = () => (
       </div>
 
       <div className="border-t-2 border-primary mt-12 pt-8 text-center text-white">
-        <p>&copy; 2023 YYC PRECAST. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} YYC PRECAST. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>

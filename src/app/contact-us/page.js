@@ -9,6 +9,7 @@ export default function page() {
     name: "",
     phone: "",
     email: "",
+    address: "",
     service: "",
     message: "",
   });
@@ -90,6 +91,7 @@ export default function page() {
       if (!emailRe.test(formData.email))
         newErrors.email = "Enter a valid email address.";
     }
+    if (!formData.address.trim()) newErrors.address = "Address is required.";
     if (!formData.service) newErrors.service = "Please select a service.";
     if (!formData.message.trim()) newErrors.message = "Message is required.";
     if (files.length < 1) newErrors.files = "Please attach at least one file.";
@@ -125,6 +127,7 @@ export default function page() {
       fd.append("name", formData.name);
       fd.append("phone", formData.phone);
       fd.append("email", formData.email);
+      fd.append("address", formData.address);
       fd.append("service", formData.service);
       fd.append("message", formData.message);
       files.forEach((f) => fd.append("attachments", f));
@@ -138,7 +141,7 @@ export default function page() {
         setServerMessage(
           "Your request has been sent — we will contact you soon."
         );
-        setFormData({ name: "", phone: "", email: "", service: "", message: "" });
+        setFormData({ name: "", phone: "", email: "", address: "", service: "", message: "" });
         setFiles([]);
         setErrors({});
       } else {
@@ -237,6 +240,24 @@ export default function page() {
 
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">
+                    Address
+                  </label>
+                  <input
+                    type="text"
+                    name="address"
+                    value={formData.address}
+                    onChange={handleInputChange}
+                    className="w-full border border-white bg-white/20 !text-white placeholder:text-white rounded-lg px-2 py-2 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                    placeholder="123 Main St, Calgary, AB"
+                    required
+                  />
+                  {errors.address && (
+                    <p className="text-red-400 text-xs mt-1">{errors.address}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2">
                     Service Required
                   </label>
                   <select
@@ -254,6 +275,12 @@ export default function page() {
                     </option>
                     <option className="text-primary" value="precast-steps">
                       Precast Concrete Steps
+                    </option>
+                    <option className="text-primary" value="prestige-broom-finish">
+                      Prestige Broom Finish
+                    </option>
+                    <option className="text-primary" value="exposed-finish">
+                      Exposed Finish
                     </option>
                     <option className="text-primary" value="window-well">
                       Window Well

@@ -14,11 +14,12 @@ export async function POST(request) {
   const name = formData.get("name")?.toString() || "";
   const phone = formData.get("phone")?.toString() || "";
   const email = formData.get("email")?.toString() || "";
+  const address = formData.get("address")?.toString() || "";
   const service = formData.get("service")?.toString() || "";
   const message = formData.get("message")?.toString() || "";
 
   // Basic validation
-  if (!name || !phone || !email || !service || !message) {
+  if (!name || !phone || !email || !address || !service || !message) {
     return NextResponse.json(
       { error: "Missing required fields." },
       { status: 400 }
@@ -69,10 +70,14 @@ export async function POST(request) {
               <td>${email}</td>
             </tr>
             <tr>
+              <th align="left" style="color:#3763ba; font-weight:bold;">Address</th>
+              <td>${address}</td>
+            </tr>
+            <tr style="background:#f0f0f0;">
               <th align="left" style="color:#3763ba; font-weight:bold;">Service</th>
               <td>${service}</td>
             </tr>
-            <tr style="background:#f0f0f0;">
+            <tr>
               <th align="left" style="color:#3763ba; font-weight:bold;">Message</th>
               <td>${message.replace(/\n/g, "<br/>")}</td>
             </tr>
