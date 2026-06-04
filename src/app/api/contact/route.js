@@ -26,11 +26,18 @@ export async function POST(request) {
     );
   }
 
+  const MAX_FILE_BYTES = 4 * 1024 * 1024; // 4MB
+
   // Gather file attachments
   const attachments = [];
   for (const file of formData.getAll("attachments")) {
-    // file is a File (Web API)
     if (file instanceof File) {
+      if (file.size > MAX_FILE_BYTES) {
+        return NextResponse.json(
+          { error: `File "${file.name}" exceeds the 4MB limit.` },
+          { status: 400 }
+        );
+      }
       const arrayBuffer = await file.arrayBuffer();
       attachments.push({
         filename: file.name,

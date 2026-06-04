@@ -17,7 +17,7 @@ const HeroSection = ({ handleScroll }) => {
   const [submitting, setSubmitting] = useState(false);
   const [serverMessage, setServerMessage] = useState(null);
 
-  const MAX_FILE_BYTES = 10 * 1024 * 1024; // 10MB
+  const MAX_FILE_BYTES = 4 * 1024 * 1024; // 4MB
   const allowedTypes = ["application/pdf", "image/jpeg", "image/png"];
 
   function handleInputChange(e) {
@@ -314,7 +314,7 @@ const HeroSection = ({ handleScroll }) => {
                         <p className="text-white">
                           Drag & drop files here or <span className="text-primary font-medium">browse</span>
                         </p>
-                        <p className="text-xs text-white mt-1">Supports PDF, JPG, PNG (Max 10MB)</p>
+                        <p className="text-xs text-white mt-1">Supports PDF, JPG, PNG (Max 4MB)</p>
                       </div>
                     </div>
 
